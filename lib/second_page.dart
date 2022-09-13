@@ -30,8 +30,8 @@ class SecondPage extends StatelessWidget {
             Text("Height $height", style: TextStyle(fontSize: 26)),
             Text("Width $width", style: TextStyle(fontSize: 26)),
             Text(
-              "Anopther text",
-              style: TextStyle(fontFamily: "Muli"),
+              "Another text",
+              style: TextStyle(fontFamily: 'Raleway'),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
