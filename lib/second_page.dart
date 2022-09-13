@@ -8,6 +8,8 @@ class SecondPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    final width = MediaQuery.of(context).size.width;
     return Scaffold(
       appBar: AppBar(
         title: Text("Second page"),
@@ -19,12 +21,14 @@ class SecondPage extends StatelessWidget {
         ),
       ),
       body: Container(
-        height: double.infinity,
+        color: Colors.green,
+        height: height / 2,
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Hello", style: TextStyle(fontSize: 26)),
+            Text("Height $height", style: TextStyle(fontSize: 26)),
+            Text("Width $width", style: TextStyle(fontSize: 26)),
             Text(
               "Anopther text",
               style: TextStyle(fontFamily: "Muli"),
