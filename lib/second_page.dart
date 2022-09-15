@@ -22,7 +22,7 @@ class SecondPage extends StatelessWidget {
       ),
       body: Container(
         color: Colors.green,
-        height: height / 2,
+        height: double.infinity,
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
