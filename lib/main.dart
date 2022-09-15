@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/Login.dart';
+import 'package:flutter_application_1/Login_UI.dart';
 import 'package:flutter_application_1/second_page.dart';
 import 'package:flutter_application_1/third_page.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         debugShowCheckedModeBanner: false,
-        home: const LoginPage());
+        home: const LoginUI());
   }
 }
 

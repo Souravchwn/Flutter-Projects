@@ -22,7 +22,7 @@ class SecondPage extends StatelessWidget {
         ),
       ),
       body: Container(
-        color: Colors.green,
+        color: Color.fromARGB(255, 43, 99, 45),
         height: double.infinity,
         width: double.infinity,
         child: Column(

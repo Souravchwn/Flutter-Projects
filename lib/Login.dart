@@ -13,8 +13,9 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   final _form = GlobalKey<FormState>();
   final _controller = TextEditingController();
+  final number = TextEditingController();
   String? text;
-  String? result = "0";
+  String? result = "";
 
   @override
   Widget build(BuildContext context) {
@@ -50,6 +51,7 @@ class _LoginPageState extends State<LoginPage> {
                   Padding(
                     padding: const EdgeInsets.all(28.0),
                     child: TextFormField(
+                      controller: number,
                       decoration: InputDecoration(
                           labelText: "Enter your name",
                           border: OutlineInputBorder()),
@@ -64,6 +66,10 @@ class _LoginPageState extends State<LoginPage> {
                   Text("Result is $result"),
                   ElevatedButton(
                       onPressed: () {
+                        int a = int.parse(_controller.text);
+                        int b = int.parse(number.text);
+                        result = (a + b).toString();
+
                         if (_form.currentState!.validate()) {
                           setState(() {
                             text = _controller.text;
