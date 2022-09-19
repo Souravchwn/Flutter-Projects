@@ -3,14 +3,14 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_application_1/Animation/FadeAnimation.dart';
 
-class LoginUI extends StatefulWidget {
-  const LoginUI({super.key});
+class Registration extends StatefulWidget {
+  const Registration({super.key});
 
   @override
-  State<LoginUI> createState() => _LoginUIState();
+  State<Registration> createState() => _RegistrationUIState();
 }
 
-class _LoginUIState extends State<LoginUI> {
+class _RegistrationUIState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
