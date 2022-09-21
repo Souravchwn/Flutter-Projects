@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter_application_1/Animation/FadeAnimation.dart';
 
 class Registration extends StatefulWidget {
   const Registration({super.key});
