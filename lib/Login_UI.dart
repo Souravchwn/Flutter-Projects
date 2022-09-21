@@ -31,7 +31,8 @@ class _LoginUIState extends State<LoginUI> {
                     child: Container(
                       decoration: const BoxDecoration(
                           image: DecorationImage(
-                              image: AssetImage('/images/background.png'),
+                              image:
+                                  AssetImage('assets\images\background-2.png'),
                               fit: BoxFit.fill)),
                     ),
                   ),
