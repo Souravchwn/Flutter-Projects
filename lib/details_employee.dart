@@ -22,8 +22,8 @@ class DetailsEmply extends StatelessWidget {
     return Scaffold(
       body: ListView(children: [
         ...details
-            .map((e) => ListTile(
-                  title: Text("Empolyee details \n Name =${e.name}"),
+            .map((e) => NewWidget(
+                  e: e,
                 ))
             .toList(),
       ]),
@@ -34,6 +34,27 @@ class DetailsEmply extends StatelessWidget {
       //     subtitle: Text(details[index].name!),
       //   ),
       // ),
+    );
+  }
+}
+
+class NewWidget extends StatelessWidget {
+  final EmployeeDetails e;
+  const NewWidget({Key? key, required this.e}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(
+        children: [
+          ListTile(
+            title: Text("Empolyee details \n Name =${e.name}"),
+          ),
+          ListTile(
+            title: Text("Empolyee details \n Name =${e.phone}"),
+          ),
+        ],
+      ),
     );
   }
 }
